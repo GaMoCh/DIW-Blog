@@ -29,7 +29,6 @@
     "url-loader": "^2.0.0",
     "webpack": "^4.34.0"
   },
-  "license": "ISC",
   "devDependencies": {
     "@types/next": "^8.0.5",
     "@types/react": "^16.8.19",

@@ -81,6 +81,8 @@ class AddPostComponent extends Component<Props, State> {
         titleInput: value
       });
     }
+
+    (target as HTMLInputElement).focus();
   }
 
   async handleImageInputChange(event: ChangeEvent) {
@@ -162,21 +164,21 @@ class AddPostComponent extends Component<Props, State> {
         this.showMessage("Texto não inserido");
       }
     } else {
-      posts.push({
-        title: titleInput,
-        author: loggedUser,
-        date: new Date().toString(),
-        image: imageInput,
-        text: textInput,
-        likes: {
-          amount: 0,
-          users: []
-        },
-        comments: []
-      });
-
-      add(posts);
-      location.reload();
+      add([
+        ...posts,
+        {
+          title: titleInput,
+          author: loggedUser,
+          date: new Date().toString(),
+          image: imageInput,
+          text: textInput,
+          likes: {
+            amount: 0,
+            users: []
+          },
+          comments: []
+        }
+      ]);
       this.handleHideAddPostModal();
     }
   }
