@@ -81,8 +81,6 @@ class AddPostComponent extends Component<Props, State> {
         titleInput: value
       });
     }
-
-    (target as HTMLInputElement).focus();
   }
 
   async handleImageInputChange(event: ChangeEvent) {

@@ -9,8 +9,8 @@ const FooterComponent: FC = () => {
           <Header as="span" color="violet">
             Código disponível em:&nbsp;
           </Header>
-          <Header as="a" color="blue" href="https://github.com/GaMoCh/Blog">
-            Gamoch/Blog
+          <Header as="a" color="blue" href="https://github.com/GaMoCh/DIW_Blog">
+            GaMoCh/DIW_Blog
           </Header>
         </GridColumn>
       </GridRow>

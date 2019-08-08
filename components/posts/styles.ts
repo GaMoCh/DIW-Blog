@@ -43,7 +43,7 @@ export const Paragraph = styled.section`
   text-indent: 4ch;
 `;
 
-export const PostDataContainer = styled.section`
+export const PostDataContainer = styled.div`
   align-items: center;
   display: flex;
   flex-wrap: wrap;

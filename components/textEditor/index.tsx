@@ -337,21 +337,23 @@ class TextEditorComponent extends Component<Props, State> {
       <Popup
         as={UnstyledPopup}
         basic
-        hideOnScroll
+        on="click"
         offset="25px, 8px"
         position="top right"
         size="mini"
         trigger={
-          <Editor
-            ref={this.getRef}
-            value={this.state.value}
-            onChange={this.onChange}
-            onKeyDown={this.onKeyDown}
-            onPaste={this.onPaste}
-            renderBlock={this.renderBlock}
-            renderMark={this.renderMark}
-            placeholder={placeholder}
-          />
+          <section>
+            <Editor
+              ref={this.getRef}
+              value={this.state.value}
+              onChange={this.onChange}
+              onKeyDown={this.onKeyDown}
+              onPaste={this.onPaste}
+              renderBlock={this.renderBlock}
+              renderMark={this.renderMark}
+              placeholder={placeholder}
+            />
+          </section>
         }
       >
         <PopupContent>
