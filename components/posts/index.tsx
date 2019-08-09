@@ -72,10 +72,6 @@ class PostsComponent extends Component<Props, State> {
     this.getHour = this.getHour.bind(this);
   }
 
-  componentWillReceiveProps() {
-    this.textEditorComponentRefs = [];
-  }
-
   createMarkup(markupString: string) {
     return { __html: markupString };
   }
