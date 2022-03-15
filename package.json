@@ -12,7 +12,7 @@
     "file-loader": "^4.0.0",
     "immutable": "^4.0.0-rc.12",
     "lodash": "4.17.13",
-    "lodash-es": "4.17.14",
+    "lodash-es": "4.17.21",
     "next": "^8.1.0",
     "next-compose-plugins": "^2.2.0",
     "react": "^16.8.6",
